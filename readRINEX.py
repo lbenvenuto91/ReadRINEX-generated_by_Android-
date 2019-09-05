@@ -113,7 +113,7 @@ with open(rinex_in_geopp, 'r') as rnx_file:
 
 
 #plot pseudorange 
-sat = 'G20'
+sat = input('Insert sat ID of the satellite to plot >> ')
 
 #pseudorange_nsl=[]
 #cella_nsl=[]
@@ -254,8 +254,8 @@ plt.title('Difference between pseudorange from Geo++ app and NSL app sat {0}'.fo
 plt.show()
 
 
-
-
+#TO DO: plot pseudorange must become a function (or a class and the plots will be the methods?)
+#check also values for doppler and C/N0
 
 
 
