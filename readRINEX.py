@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import sys
 import numpy as np
 
-rinex_in_geopp = "./Android_RINEX_data/geo++/GTER246Htest.19o"
-rinex_in_nsl = "./Android_RINEX_data/nsl/SMAR00GBR_R_20192460734test.19o"
+rinex_in_geopp = "./Android_RINEX_data/geo++/merge.19o"
+rinex_in_nsl = "./Android_RINEX_data/nsl/SMAR00GBR_R_20192460734.19o"
 
 header_nsl = 17
 header_geopp= 34
@@ -113,7 +113,7 @@ with open(rinex_in_geopp, 'r') as rnx_file:
 
 
 #plot pseudorange 
-sat = 'E26'
+sat = 'G20'
 
 #pseudorange_nsl=[]
 #cella_nsl=[]
@@ -176,14 +176,15 @@ nsl_start=list(nsl_tmp).index(common_starting_time)
 geopp_tmp=np.array(time_instant_geopp_L1)
 geopp_start=list(geopp_tmp).index(common_starting_time)
 
-print(nsl_start)
-print(geopp_start)
+#print(nsl_start)
+#print(geopp_start)
 
 common_ending_time= min(max(time_instant_nsl_L1), max(time_instant_geopp_L1))
 
 
 nsl_end=list(nsl_tmp).index(common_ending_time)
 geopp_end=list(geopp_tmp).index(common_ending_time)
+'''
 print("\n")
 print(nsl_end)
 print(geopp_end)
@@ -193,7 +194,7 @@ print(time_instant_nsl_L1[nsl_start:nsl_end])
 print("\n")
 print(pseudorange_to_plot_geopp_L1[geopp_start:geopp_end])
 print(time_instant_geopp_L1[geopp_start:geopp_end])
-
+'''
 
 #pseudorange difference for L1 frequency
 cfr_pseudorange_L1 = []
@@ -207,7 +208,7 @@ for a,b in zip(pseudorange_to_plot_nsl_L5[nsl_start:nsl_end], pseudorange_to_plo
     c = (float(a)-float(b))
     cfr_pseudorange_L5.append(c)
 
-print(cfr_pseudorange_L5)
+#print(cfr_pseudorange_L5)
 ############# plot ###########################
 plt.plot(time_instant_nsl_L1[nsl_start:nsl_end], pseudorange_to_plot_nsl_L1[nsl_start:nsl_end])
 plt.ylabel('pseudoranges ({0}) [m]'.format('E1' if sat.startswith('E') else 'L1'))
