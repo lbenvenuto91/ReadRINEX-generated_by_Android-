@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import sys
 import numpy as np
 
-rinex_in_geopp = "./Android_RINEX_data/geo++/merge.19o"
-rinex_in_nsl = "./Android_RINEX_data/nsl/SMAR00GBR_R_20192460734.19o"
+rinex_in_geopp = "./Android_RINEX_data/geo++/merge_geopp_6sett.19o"
+rinex_in_nsl = "./Android_RINEX_data/nsl/nsl_test_6sett.19o"
 
 header_nsl = 17
 header_geopp= 34
@@ -108,7 +108,7 @@ with open(rinex_in_geopp, 'r') as rnx_file:
             record_geopp.append(cleanLine)
             #print(cleanLine)
 
-
+print(satelliti_geopp)
 ###################################### PLOTTING PART ######################################
 
 
