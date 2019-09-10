@@ -25,7 +25,9 @@ record_google = [] #sat_id, pseudorange(L1), carrier phase(L1), doppler(L1), C/N
 tempo_google = []
 satelliti_google = []
 ############################## Reading data NSL (RinexOn App) ##############################
+
 print("\nReading data NSL (RinexOn App)")
+
 with open(rinex_in_nsl, 'r') as rnx_file:
 
     #skip header (RInex On app)
@@ -160,6 +162,7 @@ with open(rinex_in_google, 'r') as rnx_file:
 
 
 print(satelliti_geopp)
+
 ###################################### PLOTTING PART ######################################
 
 
@@ -219,7 +222,7 @@ time_instant_google_L1 = []
 pseudorange_to_plot_google_L5 = []
 time_instant_google_L5 = []
 
-for i in record_nsl:
+for i in record_google:
     if i[0] == sat:
         #L1 freq
         pseudorange_to_plot_google_L1.append(i[1])
@@ -239,7 +242,7 @@ for i in record_nsl:
 
 #check: same temporal instant
 common_starting_time= max(min(time_instant_nsl_L1), min(time_instant_geopp_L1), min(time_instant_google_L1))
-#print(common_starting_time)
+print(common_starting_time)
 
 nsl_tmp=np.array(time_instant_nsl_L1)
 nsl_start=list(nsl_tmp).index(common_starting_time)
@@ -272,13 +275,13 @@ print(time_instant_geopp_L1[geopp_start:geopp_end])
 
 #pseudorange difference for L1 frequency
 cfr_pseudorange_L1 = []
-for a,b in zip(pseudorange_to_plot_nsl_L1[nsl_start:nsl_end], pseudorange_to_plot_geopp_L1[geopp_start:geopp_end]):
+for a,b in zip(pseudorange_to_plot_nsl_L1[nsl_start:nsl_end], pseudorange_to_plot_google_L1[google_start:google_end]):
     c = (float(a)-float(b))
     cfr_pseudorange_L1.append(c)
     
 #pseudorange difference for L5 frequency
 cfr_pseudorange_L5 = []
-for a,b in zip(pseudorange_to_plot_nsl_L5[nsl_start:nsl_end], pseudorange_to_plot_geopp_L5[geopp_start:geopp_end]):
+for a,b in zip(pseudorange_to_plot_nsl_L5[nsl_start:nsl_end], pseudorange_to_plot_google_L5[google_start:google_end]):
     c = (float(a)-float(b))
     cfr_pseudorange_L5.append(c)
 
@@ -337,7 +340,14 @@ plt.title('RinexON (NSL app) sat {0}'.format(sat))
 plt.figure()
 
 
+plt.plot(time_instant_nsl_L1[nsl_start:nsl_end], pseudorange_to_plot_nsl_L1[nsl_start:nsl_end],time_instant_google_L1[google_start:google_end], pseudorange_to_plot_google_L1[google_start:google_end] )
+plt.ylabel('pseudoranges ({0}) [m]'.format('E1' if sat.startswith('E') else 'L1'))
+plt.xlabel('UTC time')
+plt.title('RinexON (NSL app) sat {0}'.format(sat))
 
+
+
+plt.figure()
 
 
 
