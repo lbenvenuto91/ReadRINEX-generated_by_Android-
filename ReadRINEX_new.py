@@ -78,27 +78,42 @@ def Array2plot_PR (record, sat, freq, app):
             if i[0]==sat:
             
                 if freq == "L1":
-                    pseudorange_to_plot.append(float(i[1]))
-                    time_instant.append(i[-1])
-                elif freq == "L5":
-                    if len(i)>6:
-                        pseudorange_to_plot.append(float(i[-5])) 
+                    if float(i[1]) != 0.0:
+                        pseudorange_to_plot.append(float(i[1]))
                         time_instant.append(i[-1])
                     else:
-                        pseudorange_to_plot.append(0.0)
+                        pseudorange_to_plot.append(np.nan)
+                        time_instant.append(i[-1])                        
+                elif freq == "L5":
+                    if len(i)>6: 
+                        if float(i[-5]) != 0.0:
+                            pseudorange_to_plot.append(float(i[-5])) 
+                            time_instant.append(i[-1])
+                        else:
+                            pseudorange_to_plot.append(np.nan)
+                            time_instant.append(i[-1])                                                
+                    else:
+                        pseudorange_to_plot.append(np.nan)
                         time_instant.append(i[-1])
         elif app == "Geo++ RinexLogger":
             if i[0]==sat:
                 if freq == "L1":
-                    if i[0] == sat:
+                    if float(i[1]) != 0.0:
                         pseudorange_to_plot.append(float(i[1]))
+                        time_instant.append(i[-1])
+                    else:
+                        pseudorange_to_plot.append(np.nan)
                         time_instant.append(i[-1])
                 elif freq == "L5":
                     if len(i)>6:
-                        pseudorange_to_plot.append(float(i[-4])) 
-                        time_instant.append(i[-1])
+                        if float (i[-4])!=0.0:
+                            pseudorange_to_plot.append(float(i[-4])) 
+                            time_instant.append(i[-1])
+                        else:
+                            pseudorange_to_plot.append(np.nan)
+                            time_instant.append(i[-1])
                     else:
-                        pseudorange_to_plot.append(0.0)
+                        pseudorange_to_plot.append(np.nan)
                         time_instant.append(i[-1])
         else:
             print("sei uno stronzo!")
@@ -124,7 +139,8 @@ def PoltPR(sat,freq,sepPlot):
     time2plot_google, PR2plot_google = Array2plot_PR (record_google, satellite, freq, "Google GNSSLogger")
     time2plot.append(time2plot_google)
     PR2plot.append(PR2plot_google)
-    
+    print(type(PR2plot_google[-1]))
+    print(np.nan in PR2plot_google)
     start,end = CommonStartingEndingTime(time2plot_nsl,time2plot_geopp,time2plot_google)
 
     if freq.endswith("1"):
@@ -137,8 +153,9 @@ def PoltPR(sat,freq,sepPlot):
             frequenza = "E5a"
         else:
             frequenza = "L5"
+    
     if sepPlot == True:
-
+       
         for i,j,k  in zip(App, time2plot, PR2plot):    
             
             tmp=np.array(j)
@@ -158,6 +175,8 @@ def PoltPR(sat,freq,sepPlot):
 
     elif sepPlot == False:
         print("sei stronzo!")
+        
+        
         nsl_tmp=np.array(time2plot_nsl)
         nsl_start=list(nsl_tmp).index(start)
         nsl_end=list(nsl_tmp).index(end)
@@ -170,19 +189,31 @@ def PoltPR(sat,freq,sepPlot):
         google_start=list(google_tmp).index(start)
         google_end=list(google_tmp).index(end)
         
+
+
+        #cfr_pseudorange = []
+        #for a,b in zip(PR2plot[0][nsl_start:nsl_end], PR2plot[2][google_start:google_end]):
+        #    c = (float(a)-float(b))
+        #    cfr_pseudorange.append(c)
    
         plt.plot(time2plot[0][nsl_start:nsl_end], PR2plot[0][nsl_start:nsl_end],label="{0}".format(App[0]))
-        #plt.plot(time2plot[1][geopp_start:geopp_end], PR2plot[1][geopp_start:geopp_end],label="{0}".format(App[1]))
+        plt.plot(time2plot[1][geopp_start:geopp_end], PR2plot[1][geopp_start:geopp_end],label="{0}".format(App[1]))
         plt.plot(time2plot[2][google_start:google_end], PR2plot[2][google_start:google_end],label="{0}".format(App[2]))
         plt.ylabel('pseudoranges ({0}) [m]'.format(frequenza))
-        
-        
+               
         plt.xlabel('UTC time')
         plt.title('Pseudoranges for sat {0}'.format(sat))
         plt.legend()
+        #plt.figure()
         plt.show()
 
+        #differenza
+        #plt.plot(time2plot[nsl_start:nsl_end], cfr_pseudorange[nsl_start:nsl_end])
+        #plt.ylabel('pseudoranges ({0}) [m]'.format('E1' if sat.startswith('E') else 'L1'))
+        #plt.xlabel('UTC time')
+        #plt.title('pseudorange difference {0}'.format(sat))
 
+        #plt.show()
 
 
 #POSSIBILE MAIN
@@ -204,6 +235,11 @@ elif figSeparate == "no":
 
 
 PoltPR(satellite, carrierFreq, sepPlot)
+
+
+
+
+
 #tmp=np.array(time_instant)
 #print(tmp)
 #start_time=list(tmp).index(start) #restituisce l'indice dell'elemento corrispondente all'istante di inizio

@@ -181,14 +181,14 @@ time_instant_nsl_L5 = []
 for i in record_nsl:
     if i[0] == sat:
         #L1 freq
-        pseudorange_to_plot_nsl_L1.append(i[1])
+        pseudorange_to_plot_nsl_L1.append(float(i[1]))
         time_instant_nsl_L1.append(i[-1])         
         #L5 freq
         if len(i) > 6:
-            pseudorange_to_plot_nsl_L5.append(i[-5])
+            pseudorange_to_plot_nsl_L5.append(float(i[-5]))
             time_instant_nsl_L5.append(i[-1])
         else:
-            pseudorange_to_plot_nsl_L5.append(0.0)
+            pseudorange_to_plot_nsl_L5.append(np.nan)
             time_instant_nsl_L5.append(i[-1])    
         
 #pseudorange_to_plot_nsl = [i[0] for i in pseudorange_nsl]
@@ -205,14 +205,14 @@ time_instant_geopp_L5 = []
 for i in record_geopp:
     if i[0] == sat:
         #L1 freq
-        pseudorange_to_plot_geopp_L1.append(i[1])
+        pseudorange_to_plot_geopp_L1.append(float(i[1]))
         time_instant_geopp_L1.append(i[-1])    
         #L5 freq
         if len(i) > 6:
-            pseudorange_to_plot_geopp_L5.append(i[-4])
+            pseudorange_to_plot_geopp_L5.append(float(i[-4]))
             time_instant_geopp_L5.append(i[-1])
         else:
-            pseudorange_to_plot_geopp_L5.append(0.0)
+            pseudorange_to_plot_geopp_L5.append(np.nan)
             time_instant_geopp_L5.append(i[-1])
         
 
@@ -232,7 +232,7 @@ for i in record_google:
             pseudorange_to_plot_google_L5.append(i[-5])
             time_instant_google_L5.append(i[-1])
         else:
-            pseudorange_to_plot_google_L5.append(0.0)
+            pseudorange_to_plot_google_L5.append(np.nan)
             time_instant_google_L5.append(i[-1])  
 
 
