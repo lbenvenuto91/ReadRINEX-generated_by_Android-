@@ -139,10 +139,11 @@ def PoltPR(sat,freq,sepPlot):
     time2plot_google, PR2plot_google = Array2plot_PR (record_google, satellite, freq, "Google GNSSLogger")
     time2plot.append(time2plot_google)
     PR2plot.append(PR2plot_google)
-    print(type(PR2plot_google[-1]))
-    print(np.nan in PR2plot_google)
+    
     start,end = CommonStartingEndingTime(time2plot_nsl,time2plot_geopp,time2plot_google)
 
+
+    #Roba per grafici  
     if freq.endswith("1"):
         if sat.startswith("E"):
             frequenza = "E1"
@@ -155,7 +156,7 @@ def PoltPR(sat,freq,sepPlot):
             frequenza = "L5"
     
     if sepPlot == True:
-       
+      
         for i,j,k  in zip(App, time2plot, PR2plot):    
             
             tmp=np.array(j)
@@ -188,13 +189,17 @@ def PoltPR(sat,freq,sepPlot):
         google_tmp=np.array(time2plot_google)
         google_start=list(google_tmp).index(start)
         google_end=list(google_tmp).index(end)
-        
 
 
-        #cfr_pseudorange = []
-        #for a,b in zip(PR2plot[0][nsl_start:nsl_end], PR2plot[2][google_start:google_end]):
-        #    c = (float(a)-float(b))
-        #    cfr_pseudorange.append(c)
+
+        cfr_nsl_google=[]
+        for n,g in zip(PR2plot_nsl[nsl_start:nsl_end],PR2plot_google[google_start:google_end]):
+            if n != np.nan and g != np.nan:
+                c = n-g
+                cfr_nsl_google.append(c)
+            else:
+                cfr_nsl_google.append(np.nan)
+
    
         plt.plot(time2plot[0][nsl_start:nsl_end], PR2plot[0][nsl_start:nsl_end],label="{0}".format(App[0]))
         plt.plot(time2plot[1][geopp_start:geopp_end], PR2plot[1][geopp_start:geopp_end],label="{0}".format(App[1]))
@@ -204,16 +209,19 @@ def PoltPR(sat,freq,sepPlot):
         plt.xlabel('UTC time')
         plt.title('Pseudoranges for sat {0}'.format(sat))
         plt.legend()
-        #plt.figure()
+
+        plt.figure()
+
+        plt.plot(time2plot_nsl[nsl_start:nsl_end], cfr_nsl_google[nsl_start:nsl_end])
+        plt.ylabel('pseudorange difference ({0}) [m]'.format(frequenza))
+        plt.xlabel('UTC time')
+        plt.title('Difference between pseudorange from NSL app and Google app for sat {0}'.format(sat))
+
+
+
         plt.show()
 
-        #differenza
-        #plt.plot(time2plot[nsl_start:nsl_end], cfr_pseudorange[nsl_start:nsl_end])
-        #plt.ylabel('pseudoranges ({0}) [m]'.format('E1' if sat.startswith('E') else 'L1'))
-        #plt.xlabel('UTC time')
-        #plt.title('pseudorange difference {0}'.format(sat))
 
-        #plt.show()
 
 
 #POSSIBILE MAIN
@@ -238,12 +246,6 @@ PoltPR(satellite, carrierFreq, sepPlot)
 
 
 
-
-
-#tmp=np.array(time_instant)
-#print(tmp)
-#start_time=list(tmp).index(start) #restituisce l'indice dell'elemento corrispondente all'istante di inizio
-#ending_time=list(tmp).index(end)
 
 
 
