@@ -122,7 +122,65 @@ def Array2plot_PR (record, sat, freq, app):
 
     return (time_instant, pseudorange_to_plot)
 
-def PoltPR(sat,freq,sepPlot):
+
+def Array2plot_C_N0 (record, sat, freq, app):
+    C_N0_to_plot=[]
+    time_instant=[]
+
+    for i in record:
+        if app == "NSL RinexOn" or app == "Google GNSSLogger":
+            if i[0]==sat:
+            
+                if freq == "L1":
+                    if float(i[4]) != 0.0:
+                        C_N0_to_plot.append(float(i[4]))
+                        time_instant.append(i[-1])
+                    else:
+                        C_N0_to_plot.append(np.nan)
+                        time_instant.append(i[-1])                        
+                elif freq == "L5":
+                    if len(i)>6: 
+                        if float(i[-2]) != 0.0:
+                            C_N0_to_plot.append(float(i[-2])) 
+                            time_instant.append(i[-1])
+                        else:
+                            C_N0_to_plot.append(np.nan)
+                            time_instant.append(i[-1])                                                
+                    else:
+                        C_N0_to_plot.append(np.nan)
+                        time_instant.append(i[-1])
+        elif app == "Geo++ RinexLogger":
+            if i[0]==sat:
+                if freq == "L1":
+                    if float(i[3]) != 0.0:
+                        C_N0_to_plot.append(float(i[3]))
+                        time_instant.append(i[-1])
+                    else:
+                        C_N0_to_plot.append(np.nan)
+                        time_instant.append(i[-1])
+                elif freq == "L5":
+                    if len(i)>6:
+                        if float (i[-2])!=0.0:
+                            C_N0_to_plot.append(float(i[-2])) 
+                            time_instant.append(i[-1])
+                        else:
+                            C_N0_to_plot.append(np.nan)
+                            time_instant.append(i[-1])
+                    else:
+                        C_N0_to_plot.append(np.nan)
+                        time_instant.append(i[-1])
+        else:
+            print("sei uno stronzo!")
+    
+
+
+    return (time_instant, C_N0_to_plot)
+
+
+
+
+
+def PlotPR(sat,freq,sepPlot):
     
     App=["NSL RinexOn", "Geo++ RinexLogger", "Google GNSSLogger"]
     time2plot=[]
@@ -223,6 +281,82 @@ def PoltPR(sat,freq,sepPlot):
 
 
 
+def PlotC_N0(sat,freq, sepPlot):
+    
+    App=["NSL RinexOn", "Geo++ RinexLogger", "Google GNSSLogger"]
+    time2plot=[]
+    C_N02plot = []
+
+    time2plot_nsl, C_N02plot_nsl = Array2plot_C_N0 (record_nsl, satellite, freq, "NSL RinexOn")
+    time2plot.append(time2plot_nsl)
+    C_N02plot.append(C_N02plot_nsl)
+    
+    time2plot_geopp, C_N02plot_geopp = Array2plot_C_N0 (record_geopp, satellite, freq, "Geo++ RinexLogger")
+    time2plot.append(time2plot_geopp)
+    C_N02plot.append(C_N02plot_geopp)
+    
+    time2plot_google, C_N02plot_google = Array2plot_C_N0 (record_google, satellite, freq, "Google GNSSLogger")
+    time2plot.append(time2plot_google)
+    C_N02plot.append(C_N02plot_google)
+    
+    start,end = CommonStartingEndingTime(time2plot_nsl,time2plot_geopp,time2plot_google)
+
+    #Roba per grafici  
+    if freq.endswith("1"):
+        if sat.startswith("E"):
+            frequenza = "E1"
+        else:
+            frequenza = "L1"
+    elif freq.endswith("5"):
+        if sat.startswith("E"):
+            frequenza = "E5a"
+        else:
+            frequenza = "L5"
+    if sepPlot == True:
+        for i,j,k  in zip(App, time2plot, C_N02plot):    
+                
+            tmp=np.array(j)
+            time_start=list(tmp).index(start)
+            time_end=list(tmp).index(end)
+            
+            
+            plt.plot(j[time_start:time_end], k[time_start:time_end])
+            plt.ylabel('C/N0 ({0}) [dB-Hz]'.format(frequenza))
+            plt.xlabel('UTC time')
+            plt.title('{0} sat {1}'.format(sat, i))
+            
+            #plt.yticks(np.arange(min(k[time_start:time_end]), max(k[time_start:time_end])+1000, 20000))
+            plt.figure()
+
+        plt.show()
+    elif sepPlot == False:
+        print("sei stronzo!")    
+        nsl_tmp=np.array(time2plot_nsl)
+        nsl_start=list(nsl_tmp).index(start)
+        nsl_end=list(nsl_tmp).index(end)
+    
+        geopp_tmp=np.array(time2plot_geopp)
+        geopp_start=list(geopp_tmp).index(start)
+        geopp_end=list(geopp_tmp).index(end)
+    
+        google_tmp=np.array(time2plot_google)
+        google_start=list(google_tmp).index(start)
+        google_end=list(google_tmp).index(end)
+
+
+        plt.plot(time2plot[0][nsl_start:nsl_end], C_N02plot[0][nsl_start:nsl_end],label="{0}".format(App[0]))
+        plt.plot(time2plot[1][geopp_start:geopp_end], C_N02plot[1][geopp_start:geopp_end],label="{0}".format(App[1]))
+        plt.plot(time2plot[2][google_start:google_end], C_N02plot[2][google_start:google_end],label="{0}".format(App[2]))
+        plt.ylabel('C/N0 ({0}) [dB-Hz]'.format(frequenza))
+               
+        plt.xlabel('UTC time')
+        plt.title('C/N0 for sat {0}'.format(sat))
+        plt.legend()
+
+        plt.show()
+
+
+
 
 #POSSIBILE MAIN
 tempo_nsl, record_nsl, satelliti_nsl = ReadRinexData(rinex_in_nsl, header_nsl, "NSL RinexOn")
@@ -242,9 +376,9 @@ elif figSeparate == "no":
     sepPlot =False
 
 
-PoltPR(satellite, carrierFreq, sepPlot)
+#PlotPR(satellite, carrierFreq, sepPlot)
 
-
+PlotC_N0(satellite, carrierFreq, sepPlot)
 
 
 
