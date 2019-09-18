@@ -4,13 +4,17 @@ import matplotlib.pyplot as plt
 import sys
 import numpy as np
 
+#path dove sono i dati nel repository
+#rinex_in_geopp = "./Android_RINEX_data/geo++/merge_geopp_6sett.19o"
+#rinex_in_nsl = "./Android_RINEX_data/nsl/nsl_test_6sett.19o"
+#rinex_in_google = "./Android_RINEX_data/Google_GNSSLogger/rinex_from_gnssLogger_6_settembre.19o"
 
-rinex_in_geopp = "./Android_RINEX_data/geo++/merge_geopp_6sett.19o"
-rinex_in_nsl = "./Android_RINEX_data/nsl/nsl_test_6sett.19o"
-rinex_in_google = "./Android_RINEX_data/Google_GNSSLogger/rinex_from_gnssLogger_6_settembre.19o"
-
+#path dove ho i dati nella cartella dottorato
+rinex_in_geopp = "../../ANDROID/test_rinex_android_ubx_topcon/xiaomi_mi9/geo++/2019-09-18,09_57_44_CEST/merge_geopp_18sett.19o"
+rinex_in_google = "../../ANDROID/test_rinex_android_ubx_topcon/xiaomi_mi9/google/google_18_sett_2019.19o"
+rinex_in_nsl = "../../ANDROID/test_rinex_android_ubx_topcon/xiaomi_mi9/nsl/data_20190918_095736/SMAR00GBR_R_20192610757.19o"
 header_nsl = 17
-header_geopp= 34
+header_geopp= 37
 header_google = 19
 
 
@@ -258,7 +262,14 @@ def PlotPR(sat,freq,sepPlot):
             else:
                 cfr_nsl_google.append(np.nan)
 
-   
+        cfr_nsl_geopp=[]
+        for n,gp in zip(PR2plot_nsl[nsl_start:nsl_end],PR2plot_geopp[geopp_start:geopp_end]):
+            if n != np.nan and gp != np.nan:
+                c = n-gp
+                cfr_nsl_geopp.append(c)
+            else:
+                cfr_nsl_geopp.append(np.nan) 
+
         plt.plot(time2plot[0][nsl_start:nsl_end], PR2plot[0][nsl_start:nsl_end],label="{0}".format(App[0]))
         plt.plot(time2plot[1][geopp_start:geopp_end], PR2plot[1][geopp_start:geopp_end],label="{0}".format(App[1]))
         plt.plot(time2plot[2][google_start:google_end], PR2plot[2][google_start:google_end],label="{0}".format(App[2]))
@@ -275,7 +286,12 @@ def PlotPR(sat,freq,sepPlot):
         plt.xlabel('UTC time')
         plt.title('Difference between pseudorange from NSL app and Google app for sat {0}'.format(sat))
 
+        plt.figure()
 
+        plt.plot(time2plot_nsl[nsl_start:nsl_end], cfr_nsl_geopp[nsl_start:nsl_end])
+        plt.ylabel('pseudorange difference ({0}) [m]'.format(frequenza))
+        plt.xlabel('UTC time')
+        plt.title('Difference between pseudorange from NSL app and Geo++ app for sat {0}'.format(sat))
 
         plt.show()
 
@@ -376,9 +392,9 @@ elif figSeparate == "no":
     sepPlot =False
 
 
-#PlotPR(satellite, carrierFreq, sepPlot)
+PlotPR(satellite, carrierFreq, sepPlot)
 
-PlotC_N0(satellite, carrierFreq, sepPlot)
+#PlotC_N0(satellite, carrierFreq, sepPlot)
 
 
 
