@@ -5,16 +5,16 @@ import sys
 import numpy as np
 
 #path dove sono i dati nel repository
-#rinex_in_geopp = "./Android_RINEX_data/geo++/merge_geopp_6sett.19o"
-#rinex_in_nsl = "./Android_RINEX_data/nsl/nsl_test_6sett.19o"
-#rinex_in_google = "./Android_RINEX_data/Google_GNSSLogger/rinex_from_gnssLogger_6_settembre.19o"
+rinex_in_geopp = "./Android_RINEX_data/geo++/merge_geopp_6sett.19o"
+rinex_in_nsl = "./Android_RINEX_data/nsl/nsl_test_6sett.19o"
+rinex_in_google = "./Android_RINEX_data/Google_GNSSLogger/rinex_from_gnssLogger_6_settembre.19o"
 
 #path dove ho i dati nella cartella dottorato
-rinex_in_geopp = "../../ANDROID/test_rinex_android_ubx_topcon/xiaomi_mi9/geo++/2019-09-18,09_57_44_CEST/merge_geopp_18sett.19o"
-rinex_in_google = "../../ANDROID/test_rinex_android_ubx_topcon/xiaomi_mi9/google/google_18_sett_2019.19o"
-rinex_in_nsl = "../../ANDROID/test_rinex_android_ubx_topcon/xiaomi_mi9/nsl/data_20190918_095736/SMAR00GBR_R_20192610757.19o"
+#rinex_in_geopp = "../../ANDROID/test_app_ubx_tpc/xiaomi_mi9/geo++/2019-09-18,09_57_44_CEST/merge_geopp_18sett.19o"
+#rinex_in_google = "../../ANDROID/test_app_ubx_tpc/xiaomi_mi9/google/google_18_sett_2019.19o"
+#rinex_in_nsl = "../../ANDROID/test_app_ubx_tpc/xiaomi_mi9/nsl/data_20190918_095736/SMAR00GBR_R_20192610757.19o"
 header_nsl = 17
-header_geopp= 37
+header_geopp= 34
 header_google = 19
 
 
@@ -269,6 +269,7 @@ def PlotPR(sat,freq,sepPlot):
                 cfr_nsl_geopp.append(c)
             else:
                 cfr_nsl_geopp.append(np.nan) 
+                
 
         plt.plot(time2plot[0][nsl_start:nsl_end], PR2plot[0][nsl_start:nsl_end],label="{0}".format(App[0]))
         plt.plot(time2plot[1][geopp_start:geopp_end], PR2plot[1][geopp_start:geopp_end],label="{0}".format(App[1]))
@@ -379,7 +380,9 @@ tempo_nsl, record_nsl, satelliti_nsl = ReadRinexData(rinex_in_nsl, header_nsl, "
 tempo_geopp, record_geopp, satelliti_geopp = ReadRinexData(rinex_in_geopp, header_geopp, "Geo++ RinexLogger")
 tempo_google, record_google, satelliti_google = ReadRinexData(rinex_in_google, header_google, "Google GNSSLogger")
 print("\nRead data for the following satellites:\n{0}".format(satelliti_nsl))
-
+inizio, fine = CommonStartingEndingTime(tempo_nsl, tempo_geopp, tempo_google)
+print("\n starting time: {}".format(inizio))
+print("\n ending time: {}".format(fine))
 satellite = input('\nInsert sat ID of the satellite to plot >> ')
 
 carrierFreq = input('\n Choose between L1 or L5: ')

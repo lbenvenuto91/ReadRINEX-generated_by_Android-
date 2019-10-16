@@ -1,0 +1,2624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<Style id="P0">
+  <IconStyle>
+    <color>ffffffff</color>
+    <scale>0.3</scale>
+    <Icon><href>http://maps.google.com/mapfiles/kml/pal2/icon18.png</href></Icon>
+  </IconStyle>
+</Style>
+<Style id="P1">
+  <IconStyle>
+    <color>ff008800</color>
+    <scale>0.2</scale>
+    <Icon><href>http://maps.google.com/mapfiles/kml/pal2/icon18.png</href></Icon>
+  </IconStyle>
+</Style>
+<Style id="P2">
+  <IconStyle>
+    <color>ff00aaff</color>
+    <scale>0.2</scale>
+    <Icon><href>http://maps.google.com/mapfiles/kml/pal2/icon18.png</href></Icon>
+  </IconStyle>
+</Style>
+<Style id="P3">
+  <IconStyle>
+    <color>ff0000ff</color>
+    <scale>0.2</scale>
+    <Icon><href>http://maps.google.com/mapfiles/kml/pal2/icon18.png</href></Icon>
+  </IconStyle>
+</Style>
+<Style id="P4">
+  <IconStyle>
+    <color>ff00ffff</color>
+    <scale>0.2</scale>
+    <Icon><href>http://maps.google.com/mapfiles/kml/pal2/icon18.png</href></Icon>
+  </IconStyle>
+</Style>
+<Style id="P5">
+  <IconStyle>
+    <color>ffff00ff</color>
+    <scale>0.2</scale>
+    <Icon><href>http://maps.google.com/mapfiles/kml/pal2/icon18.png</href></Icon>
+  </IconStyle>
+</Style>
+<Placemark>
+<name>Rover Track</name>
+<Style>
+<LineStyle>
+<color>ff00ffff</color>
+</LineStyle>
+</Style>
+<LineString>
+<coordinates>
+  8.963440186,44.400439476,0.000
+  8.963383643,44.400476627,0.000
+  8.963403871,44.400416753,0.000
+  8.963378880,44.400424901,0.000
+  8.963371571,44.400422373,0.000
+  8.963424132,44.400340839,0.000
+  8.963412226,44.400391996,0.000
+  8.963446281,44.400397909,0.000
+  8.963430240,44.400462625,0.000
+  8.963444907,44.400420051,0.000
+  8.963360355,44.400446475,0.000
+  8.963403803,44.400452944,0.000
+  8.963490524,44.400508803,0.000
+  8.963482808,44.400493562,0.000
+  8.963499124,44.400503375,0.000
+  8.963542138,44.400490632,0.000
+  8.963549033,44.400454103,0.000
+  8.963605811,44.400492770,0.000
+  8.963606461,44.400458933,0.000
+  8.963545079,44.400459846,0.000
+  8.963565687,44.400461330,0.000
+  8.963542006,44.400468099,0.000
+  8.963546525,44.400491243,0.000
+  8.963522147,44.400459529,0.000
+  8.963509471,44.400473706,0.000
+  8.963496684,44.400435414,0.000
+  8.963507191,44.400459622,0.000
+  8.963517563,44.400439376,0.000
+  8.963504427,44.400474501,0.000
+  8.963461892,44.400501621,0.000
+  8.963487376,44.400503187,0.000
+  8.963515881,44.400482900,0.000
+  8.963426101,44.400472513,0.000
+  8.963473322,44.400474064,0.000
+  8.963430809,44.400539666,0.000
+  8.963468047,44.400476946,0.000
+  8.963485444,44.400518458,0.000
+  8.963497712,44.400448945,0.000
+  8.963482440,44.400517936,0.000
+  8.963491554,44.400531049,0.000
+  8.963505916,44.400490141,0.000
+  8.963556956,44.400489560,0.000
+  8.963520786,44.400494156,0.000
+  8.963503608,44.400490484,0.000
+  8.963485649,44.400479741,0.000
+  8.963523349,44.400478287,0.000
+  8.963506715,44.400518020,0.000
+  8.963450377,44.400515703,0.000
+  8.963422380,44.400522805,0.000
+  8.963416963,44.400454559,0.000
+  8.963462593,44.400450091,0.000
+  8.963442874,44.400467758,0.000
+  8.963424266,44.400420480,0.000
+  8.963501952,44.400438540,0.000
+  8.963460177,44.400472895,0.000
+  8.963474281,44.400503494,0.000
+  8.963489047,44.400463703,0.000
+  8.963471957,44.400491914,0.000
+  8.963485406,44.400430407,0.000
+  8.963409480,44.400470552,0.000
+  8.963480494,44.400467080,0.000
+  8.963468712,44.400492926,0.000
+  8.963482814,44.400481083,0.000
+  8.963542982,44.400454664,0.000
+  8.963497685,44.400436265,0.000
+  8.963533504,44.400415841,0.000
+  8.963516669,44.400485248,0.000
+  8.963494660,44.400480868,0.000
+  8.963522812,44.400447621,0.000
+  8.963481669,44.400504599,0.000
+  8.963551284,44.400463241,0.000
+  8.963541810,44.400473942,0.000
+  8.963547527,44.400457718,0.000
+  8.963532705,44.400463128,0.000
+  8.963529336,44.400555739,0.000
+  8.963545692,44.400485773,0.000
+  8.963541842,44.400538574,0.000
+  8.963515811,44.400531461,0.000
+  8.963516684,44.400521776,0.000
+  8.963500199,44.400557253,0.000
+  8.963557038,44.400516929,0.000
+  8.963566396,44.400477250,0.000
+  8.963523592,44.400512564,0.000
+  8.963454951,44.400538402,0.000
+  8.963519576,44.400504255,0.000
+  8.963474339,44.400472762,0.000
+  8.963511612,44.400465389,0.000
+  8.963455048,44.400480677,0.000
+  8.963439426,44.400478088,0.000
+  8.963500475,44.400495992,0.000
+  8.963526743,44.400484797,0.000
+  8.963457098,44.400511018,0.000
+  8.963449540,44.400509225,0.000
+  8.963459426,44.400462027,0.000
+  8.963431584,44.400525310,0.000
+  8.963516939,44.400450738,0.000
+  8.963497391,44.400454033,0.000
+  8.963510047,44.400417359,0.000
+  8.963480682,44.400449819,0.000
+  8.963485162,44.400406759,0.000
+  8.963464944,44.400420069,0.000
+  8.963539474,44.400432836,0.000
+  8.963445136,44.400491697,0.000
+  8.963416961,44.400445313,0.000
+  8.963428783,44.400428678,0.000
+  8.963403167,44.400459379,0.000
+  8.963499965,44.400429016,0.000
+  8.963436450,44.400436711,0.000
+  8.963425134,44.400444409,0.000
+  8.963441400,44.400454653,0.000
+  8.963473924,44.400465863,0.000
+  8.963459937,44.400538722,0.000
+  8.963485068,44.400448734,0.000
+  8.963481838,44.400480897,0.000
+  8.963446518,44.400502222,0.000
+  8.963497156,44.400465301,0.000
+  8.963496810,44.400452790,0.000
+  8.963467085,44.400469489,0.000
+  8.963524740,44.400504777,0.000
+  8.963500459,44.400478803,0.000
+  8.963526618,44.400505685,0.000
+  8.963515346,44.400432826,0.000
+  8.963512688,44.400446029,0.000
+  8.963484473,44.400481057,0.000
+  8.963447434,44.400500535,0.000
+  8.963523880,44.400462341,0.000
+  8.963493643,44.400501886,0.000
+  8.963504327,44.400503530,0.000
+  8.963515410,44.400482176,0.000
+  8.963562654,44.400438336,0.000
+  8.963531463,44.400485475,0.000
+  8.963504191,44.400451976,0.000
+  8.963511296,44.400460171,0.000
+  8.963528320,44.400427596,0.000
+  8.963506711,44.400424823,0.000
+  8.963466850,44.400463533,0.000
+  8.963500439,44.400445474,0.000
+  8.963553559,44.400410410,0.000
+  8.963505069,44.400459583,0.000
+  8.963513691,44.400449824,0.000
+  8.963501696,44.400475519,0.000
+  8.963518196,44.400472057,0.000
+  8.963526587,44.400458210,0.000
+  8.963536026,44.400454120,0.000
+  8.963485054,44.400410810,0.000
+  8.963490831,44.400481214,0.000
+  8.963461127,44.400491706,0.000
+  8.963489299,44.400488733,0.000
+  8.963505260,44.400449368,0.000
+  8.963541862,44.400452741,0.000
+  8.963567158,44.400457862,0.000
+  8.963516911,44.400465700,0.000
+  8.963515780,44.400466998,0.000
+  8.963515342,44.400482475,0.000
+  8.963529387,44.400456952,0.000
+  8.963490831,44.400529011,0.000
+  8.963440699,44.400498591,0.000
+  8.963504990,44.400512814,0.000
+  8.963418976,44.400530874,0.000
+  8.963434421,44.400541455,0.000
+  8.963454965,44.400556130,0.000
+  8.963461870,44.400513858,0.000
+  8.963425326,44.400536456,0.000
+  8.963466742,44.400529950,0.000
+  8.963401038,44.400531949,0.000
+  8.963474704,44.400469356,0.000
+  8.963497566,44.400492719,0.000
+  8.963482560,44.400510228,0.000
+  8.963461705,44.400464466,0.000
+  8.963442624,44.400512012,0.000
+  8.963456790,44.400488436,0.000
+  8.963433236,44.400528365,0.000
+  8.963432086,44.400496782,0.000
+  8.963411858,44.400438778,0.000
+  8.963479117,44.400459112,0.000
+  8.963470174,44.400453214,0.000
+  8.963460633,44.400443122,0.000
+  8.963370532,44.400451569,0.000
+  8.963426517,44.400429268,0.000
+  8.963449063,44.400453382,0.000
+  8.963408184,44.400450839,0.000
+  8.963444722,44.400455806,0.000
+  8.963466898,44.400478720,0.000
+  8.963455624,44.400435422,0.000
+  8.963483541,44.400502847,0.000
+  8.963486721,44.400492602,0.000
+  8.963465845,44.400461445,0.000
+  8.963474337,44.400513421,0.000
+  8.963462285,44.400481141,0.000
+  8.963486380,44.400453003,0.000
+  8.963485475,44.400462337,0.000
+  8.963465282,44.400554142,0.000
+  8.963490394,44.400528733,0.000
+  8.963556473,44.400497759,0.000
+  8.963452924,44.400511898,0.000
+  8.963470137,44.400497771,0.000
+  8.963475194,44.400454333,0.000
+  8.963472631,44.400575751,0.000
+  8.963510052,44.400471693,0.000
+  8.963466824,44.400473925,0.000
+  8.963481479,44.400489704,0.000
+  8.963449566,44.400465090,0.000
+  8.963481198,44.400523131,0.000
+  8.963453276,44.400453509,0.000
+  8.963434028,44.400499690,0.000
+  8.963404776,44.400486147,0.000
+  8.963445797,44.400434328,0.000
+  8.963426926,44.400457431,0.000
+  8.963444896,44.400442734,0.000
+  8.963455699,44.400441087,0.000
+  8.963458321,44.400492750,0.000
+  8.963432276,44.400465217,0.000
+  8.963464372,44.400439236,0.000
+  8.963453098,44.400414493,0.000
+  8.963451577,44.400380546,0.000
+  8.963448156,44.400412414,0.000
+  8.963441447,44.400443750,0.000
+  8.963454447,44.400476714,0.000
+  8.963486868,44.400436618,0.000
+  8.963461714,44.400435444,0.000
+  8.963474689,44.400426818,0.000
+  8.963452110,44.400459015,0.000
+  8.963470222,44.400426699,0.000
+  8.963515101,44.400453295,0.000
+  8.963540361,44.400441365,0.000
+  8.963539978,44.400451865,0.000
+  8.963549278,44.400461828,0.000
+  8.963523687,44.400480441,0.000
+  8.963510148,44.400495373,0.000
+  8.963521084,44.400458030,0.000
+  8.963571366,44.400452347,0.000
+  8.963543416,44.400485009,0.000
+  8.963477605,44.400490628,0.000
+  8.963515204,44.400532998,0.000
+  8.963495966,44.400463694,0.000
+  8.963410079,44.400513040,0.000
+  8.963458412,44.400464374,0.000
+  8.963459639,44.400467576,0.000
+  8.963457566,44.400441065,0.000
+  8.963426470,44.400465460,0.000
+  8.963487578,44.400451338,0.000
+  8.963494350,44.400453005,0.000
+  8.963466983,44.400489923,0.000
+  8.963504266,44.400507029,0.000
+  8.963454745,44.400468361,0.000
+  8.963452570,44.400514781,0.000
+  8.963482464,44.400499669,0.000
+  8.963434964,44.400489312,0.000
+  8.963480198,44.400539683,0.000
+  8.963506455,44.400480963,0.000
+  8.963464803,44.400481384,0.000
+  8.963513289,44.400475514,0.000
+  8.963452547,44.400508503,0.000
+  8.963465049,44.400478817,0.000
+  8.963528080,44.400463266,0.000
+  8.963457210,44.400457861,0.000
+  8.963512150,44.400503129,0.000
+  8.963526194,44.400463526,0.000
+  8.963525788,44.400458888,0.000
+  8.963443796,44.400432718,0.000
+  8.963478403,44.400495557,0.000
+  8.963496906,44.400456993,0.000
+  8.963449257,44.400482351,0.000
+  8.963498848,44.400455942,0.000
+  8.963479273,44.400457873,0.000
+  8.963497504,44.400425717,0.000
+  8.963467677,44.400469388,0.000
+  8.963433952,44.400473182,0.000
+  8.963486708,44.400454037,0.000
+  8.963440604,44.400436531,0.000
+  8.963442418,44.400422986,0.000
+  8.963437191,44.400438843,0.000
+  8.963442256,44.400452978,0.000
+  8.963463669,44.400455034,0.000
+  8.963448142,44.400454495,0.000
+  8.963455671,44.400451824,0.000
+  8.963433840,44.400438235,0.000
+  8.963498053,44.400465653,0.000
+  8.963469264,44.400465985,0.000
+  8.963466151,44.400440164,0.000
+  8.963414580,44.400495038,0.000
+  8.963434487,44.400486827,0.000
+  8.963442418,44.400462917,0.000
+  8.963395864,44.400497016,0.000
+  8.963403723,44.400521385,0.000
+  8.963463306,44.400532702,0.000
+  8.963395821,44.400556098,0.000
+  8.963465437,44.400563734,0.000
+  8.963424171,44.400610263,0.000
+  8.963457188,44.400572480,0.000
+  8.963511950,44.400550032,0.000
+  8.963496419,44.400502916,0.000
+  8.963434715,44.400601409,0.000
+  8.963482087,44.400470191,0.000
+  8.963439187,44.400574399,0.000
+  8.963433235,44.400545759,0.000
+  8.963463088,44.400620299,0.000
+  8.963428709,44.400593981,0.000
+  8.963471851,44.400567035,0.000
+  8.963478683,44.400598033,0.000
+  8.963463270,44.400589471,0.000
+  8.963446380,44.400548997,0.000
+  8.963442688,44.400533393,0.000
+  8.963413205,44.400570127,0.000
+  8.963408371,44.400551325,0.000
+  8.963461757,44.400572834,0.000
+  8.963442981,44.400505432,0.000
+  8.963494674,44.400510005,0.000
+  8.963463340,44.400537822,0.000
+  8.963438147,44.400513743,0.000
+  8.963475872,44.400484532,0.000
+  8.963484797,44.400532483,0.000
+  8.963442278,44.400552769,0.000
+  8.963466344,44.400478952,0.000
+  8.963453085,44.400462288,0.000
+  8.963449612,44.400448945,0.000
+  8.963443145,44.400490638,0.000
+  8.963532283,44.400500021,0.000
+  8.963522900,44.400502738,0.000
+  8.963504373,44.400505542,0.000
+  8.963445968,44.400501690,0.000
+  8.963484082,44.400491086,0.000
+  8.963494944,44.400499403,0.000
+  8.963463218,44.400499328,0.000
+  8.963558375,44.400516652,0.000
+  8.963481714,44.400552062,0.000
+  8.963451634,44.400503513,0.000
+  8.963540578,44.400542399,0.000
+  8.963500714,44.400497652,0.000
+  8.963484129,44.400536694,0.000
+  8.963519895,44.400472259,0.000
+  8.963520525,44.400430695,0.000
+  8.963478025,44.400494083,0.000
+  8.963482427,44.400482801,0.000
+  8.963432376,44.400538028,0.000
+  8.963434252,44.400504203,0.000
+  8.963436560,44.400497117,0.000
+  8.963471498,44.400481964,0.000
+  8.963422609,44.400534982,0.000
+  8.963497865,44.400517244,0.000
+  8.963449739,44.400503967,0.000
+  8.963415969,44.400507297,0.000
+  8.963493377,44.400483510,0.000
+  8.963381237,44.400489039,0.000
+  8.963479280,44.400515301,0.000
+  8.963457810,44.400482774,0.000
+  8.963482131,44.400561919,0.000
+  8.963508672,44.400444935,0.000
+  8.963553804,44.400365613,0.000
+  8.963512368,44.400469144,0.000
+  8.963516653,44.400473310,0.000
+  8.963523645,44.400467196,0.000
+  8.963520576,44.400448435,0.000
+  8.963499937,44.400470949,0.000
+  8.963527359,44.400508162,0.000
+  8.963445323,44.400559852,0.000
+  8.963439230,44.400473713,0.000
+  8.963485934,44.400516353,0.000
+  8.963427150,44.400381765,0.000
+  8.963423857,44.400458368,0.000
+  8.963463384,44.400572194,0.000
+  8.963504420,44.400408743,0.000
+  8.963491478,44.400389616,0.000
+  8.963484763,44.400384587,0.000
+  8.963440446,44.400404583,0.000
+  8.963528614,44.400461227,0.000
+</coordinates>
+</LineString>
+</Placemark>
+<Folder>
+  <name>Rover Position</name>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963440186,44.400439476,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963383643,44.400476627,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963403871,44.400416753,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963378880,44.400424901,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963371571,44.400422373,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963424132,44.400340839,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963412226,44.400391996,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963446281,44.400397909,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963430240,44.400462625,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963444907,44.400420051,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963360355,44.400446475,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963403803,44.400452944,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963490524,44.400508803,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482808,44.400493562,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963499124,44.400503375,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963542138,44.400490632,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963549033,44.400454103,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963605811,44.400492770,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963606461,44.400458933,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963545079,44.400459846,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963565687,44.400461330,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963542006,44.400468099,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963546525,44.400491243,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963522147,44.400459529,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963509471,44.400473706,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963496684,44.400435414,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963507191,44.400459622,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963517563,44.400439376,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504427,44.400474501,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963461892,44.400501621,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963487376,44.400503187,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515881,44.400482900,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963426101,44.400472513,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963473322,44.400474064,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963430809,44.400539666,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963468047,44.400476946,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485444,44.400518458,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497712,44.400448945,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482440,44.400517936,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963491554,44.400531049,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963505916,44.400490141,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963556956,44.400489560,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963520786,44.400494156,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963503608,44.400490484,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485649,44.400479741,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963523349,44.400478287,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963506715,44.400518020,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963450377,44.400515703,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963422380,44.400522805,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963416963,44.400454559,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963462593,44.400450091,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442874,44.400467758,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963424266,44.400420480,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963501952,44.400438540,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963460177,44.400472895,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963474281,44.400503494,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963489047,44.400463703,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963471957,44.400491914,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485406,44.400430407,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963409480,44.400470552,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963480494,44.400467080,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963468712,44.400492926,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482814,44.400481083,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963542982,44.400454664,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497685,44.400436265,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963533504,44.400415841,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963516669,44.400485248,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963494660,44.400480868,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963522812,44.400447621,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963481669,44.400504599,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963551284,44.400463241,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963541810,44.400473942,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963547527,44.400457718,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963532705,44.400463128,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963529336,44.400555739,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963545692,44.400485773,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963541842,44.400538574,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515811,44.400531461,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963516684,44.400521776,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963500199,44.400557253,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963557038,44.400516929,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963566396,44.400477250,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963523592,44.400512564,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963454951,44.400538402,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963519576,44.400504255,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963474339,44.400472762,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963511612,44.400465389,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963455048,44.400480677,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963439426,44.400478088,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963500475,44.400495992,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963526743,44.400484797,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963457098,44.400511018,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963449540,44.400509225,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963459426,44.400462027,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963431584,44.400525310,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963516939,44.400450738,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497391,44.400454033,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963510047,44.400417359,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963480682,44.400449819,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485162,44.400406759,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963464944,44.400420069,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963539474,44.400432836,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963445136,44.400491697,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963416961,44.400445313,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963428783,44.400428678,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963403167,44.400459379,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963499965,44.400429016,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963436450,44.400436711,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963425134,44.400444409,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963441400,44.400454653,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963473924,44.400465863,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963459937,44.400538722,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485068,44.400448734,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963481838,44.400480897,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963446518,44.400502222,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497156,44.400465301,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963496810,44.400452790,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963467085,44.400469489,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963524740,44.400504777,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963500459,44.400478803,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963526618,44.400505685,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515346,44.400432826,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963512688,44.400446029,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963484473,44.400481057,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963447434,44.400500535,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963523880,44.400462341,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963493643,44.400501886,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504327,44.400503530,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515410,44.400482176,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963562654,44.400438336,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963531463,44.400485475,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504191,44.400451976,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963511296,44.400460171,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963528320,44.400427596,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963506711,44.400424823,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466850,44.400463533,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963500439,44.400445474,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963553559,44.400410410,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963505069,44.400459583,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963513691,44.400449824,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963501696,44.400475519,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963518196,44.400472057,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963526587,44.400458210,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963536026,44.400454120,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485054,44.400410810,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963490831,44.400481214,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963461127,44.400491706,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963489299,44.400488733,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963505260,44.400449368,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963541862,44.400452741,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963567158,44.400457862,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963516911,44.400465700,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515780,44.400466998,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515342,44.400482475,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963529387,44.400456952,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963490831,44.400529011,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963440699,44.400498591,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504990,44.400512814,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963418976,44.400530874,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963434421,44.400541455,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963454965,44.400556130,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963461870,44.400513858,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963425326,44.400536456,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466742,44.400529950,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963401038,44.400531949,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963474704,44.400469356,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497566,44.400492719,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482560,44.400510228,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963461705,44.400464466,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442624,44.400512012,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963456790,44.400488436,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963433236,44.400528365,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963432086,44.400496782,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963411858,44.400438778,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963479117,44.400459112,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963470174,44.400453214,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963460633,44.400443122,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963370532,44.400451569,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963426517,44.400429268,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963449063,44.400453382,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963408184,44.400450839,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963444722,44.400455806,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466898,44.400478720,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963455624,44.400435422,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963483541,44.400502847,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963486721,44.400492602,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963465845,44.400461445,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963474337,44.400513421,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963462285,44.400481141,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963486380,44.400453003,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485475,44.400462337,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963465282,44.400554142,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963490394,44.400528733,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963556473,44.400497759,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963452924,44.400511898,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963470137,44.400497771,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963475194,44.400454333,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963472631,44.400575751,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963510052,44.400471693,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466824,44.400473925,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963481479,44.400489704,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963449566,44.400465090,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963481198,44.400523131,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963453276,44.400453509,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963434028,44.400499690,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963404776,44.400486147,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963445797,44.400434328,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963426926,44.400457431,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963444896,44.400442734,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963455699,44.400441087,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963458321,44.400492750,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963432276,44.400465217,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963464372,44.400439236,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963453098,44.400414493,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963451577,44.400380546,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963448156,44.400412414,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963441447,44.400443750,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963454447,44.400476714,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963486868,44.400436618,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963461714,44.400435444,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963474689,44.400426818,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963452110,44.400459015,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963470222,44.400426699,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515101,44.400453295,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963540361,44.400441365,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963539978,44.400451865,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963549278,44.400461828,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963523687,44.400480441,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963510148,44.400495373,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963521084,44.400458030,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963571366,44.400452347,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963543416,44.400485009,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963477605,44.400490628,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963515204,44.400532998,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963495966,44.400463694,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963410079,44.400513040,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963458412,44.400464374,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963459639,44.400467576,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963457566,44.400441065,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963426470,44.400465460,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963487578,44.400451338,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963494350,44.400453005,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466983,44.400489923,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504266,44.400507029,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963454745,44.400468361,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963452570,44.400514781,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482464,44.400499669,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963434964,44.400489312,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963480198,44.400539683,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963506455,44.400480963,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963464803,44.400481384,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963513289,44.400475514,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963452547,44.400508503,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963465049,44.400478817,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963528080,44.400463266,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963457210,44.400457861,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963512150,44.400503129,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963526194,44.400463526,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963525788,44.400458888,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963443796,44.400432718,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963478403,44.400495557,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963496906,44.400456993,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963449257,44.400482351,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963498848,44.400455942,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963479273,44.400457873,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497504,44.400425717,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963467677,44.400469388,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963433952,44.400473182,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963486708,44.400454037,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963440604,44.400436531,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442418,44.400422986,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963437191,44.400438843,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442256,44.400452978,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463669,44.400455034,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963448142,44.400454495,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963455671,44.400451824,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963433840,44.400438235,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963498053,44.400465653,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963469264,44.400465985,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466151,44.400440164,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963414580,44.400495038,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963434487,44.400486827,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442418,44.400462917,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963395864,44.400497016,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963403723,44.400521385,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463306,44.400532702,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963395821,44.400556098,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963465437,44.400563734,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963424171,44.400610263,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963457188,44.400572480,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963511950,44.400550032,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963496419,44.400502916,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963434715,44.400601409,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482087,44.400470191,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963439187,44.400574399,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963433235,44.400545759,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463088,44.400620299,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963428709,44.400593981,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963471851,44.400567035,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963478683,44.400598033,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463270,44.400589471,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963446380,44.400548997,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442688,44.400533393,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963413205,44.400570127,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963408371,44.400551325,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963461757,44.400572834,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442981,44.400505432,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963494674,44.400510005,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463340,44.400537822,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963438147,44.400513743,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963475872,44.400484532,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963484797,44.400532483,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963442278,44.400552769,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963466344,44.400478952,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963453085,44.400462288,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963449612,44.400448945,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963443145,44.400490638,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963532283,44.400500021,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963522900,44.400502738,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504373,44.400505542,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963445968,44.400501690,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963484082,44.400491086,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963494944,44.400499403,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463218,44.400499328,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963558375,44.400516652,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963481714,44.400552062,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963451634,44.400503513,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963540578,44.400542399,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963500714,44.400497652,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963484129,44.400536694,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963519895,44.400472259,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963520525,44.400430695,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963478025,44.400494083,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482427,44.400482801,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963432376,44.400538028,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963434252,44.400504203,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963436560,44.400497117,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963471498,44.400481964,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963422609,44.400534982,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963497865,44.400517244,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963449739,44.400503967,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963415969,44.400507297,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963493377,44.400483510,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963381237,44.400489039,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963479280,44.400515301,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963457810,44.400482774,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963482131,44.400561919,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963508672,44.400444935,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963553804,44.400365613,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963512368,44.400469144,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963516653,44.400473310,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963523645,44.400467196,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963520576,44.400448435,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963499937,44.400470949,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963527359,44.400508162,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963445323,44.400559852,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963439230,44.400473713,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963485934,44.400516353,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963427150,44.400381765,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963423857,44.400458368,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963463384,44.400572194,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963504420,44.400408743,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963491478,44.400389616,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963484763,44.400384587,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963440446,44.400404583,0.000</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<styleUrl>#P3</styleUrl>
+<Point>
+<coordinates>  8.963528614,44.400461227,0.000</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Document>
+</kml>
