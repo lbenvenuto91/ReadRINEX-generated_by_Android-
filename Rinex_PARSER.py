@@ -3,7 +3,7 @@
 
 
 import pandas as pd
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 import time
 
 directory ="./Android_RINEX_data/"
@@ -34,10 +34,12 @@ def readObs(dir, file):
                 #print(links)
                 index = datetime.strptime(' '.join(links[1:7]), '%Y %m %d %H %M %S.%f0')
                 print(index)
-                
+                b = index + timedelta(0,3) #add 3 seconds
+                c = index - timedelta(0,3) #remove 3 seconds
+                print(b,c)
                 #Identify number of satellites
                 satNum = int(links[8])
-                print(satNum)
+                #print(satNum)
                 #For every sat
                 for j in range(satNum):
                     #just save the data as a string for now
