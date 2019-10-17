@@ -6,8 +6,8 @@ import pandas as pd
 from datetime import datetime, date
 import time
 
-directory ="/home/lorenzo/remote/progetti_convegni/ricerca/2018_2022_PhD_Lorenzo/lavoro_ION-PLANS/"
-rinex ="testMDP.19o" 
+directory ="./Android_RINEX_data/"
+rinex ="test_rinex_ridotto.19o" 
 
 
 
@@ -22,7 +22,7 @@ def readObs(dir, file):
                 break
     #Grab Data
     
-    print('ciao')
+    #print('ciao sono qui')
     with open(dir + file) as handler:
         for i, line in enumerate(handler):
             #Check for a Timestamp lable
@@ -41,38 +41,52 @@ def readObs(dir, file):
                     #just save the data as a string for now
                     satData = handler.readline()
                    
-                    print("satID",satData[0:3],index)
+                    #print("satID",satData[0:3],index)
                     
                     if satData.startswith("E"):
                          #caso Galileo
                         
                         try:
                             try:
-                                print("c1", satData[68:82])
+                                
+                                C1 = float(satData[68:82])
+                       #         print("C1", C1)
                             except:
-                                print("c1", 0.0)
+                                C1 = 0.0
+                        #        print("c1", C1)
 
                             try:
-                                print("E1", float(satData[83:98]))
+                                
+                                L1=float(satData[83:98])
+                         #       print("E1", L1)
                             except:
-                                print("E1", 0.0)
+                                L1=0.0
+                          #      print("E1", L1)
                             
                             try:
-                                print("d1", float(satData[102:117]))
+                                D1=float(satData[102:117])
+                           #     print("d1", D1)
                             except:
-                                print("d1", 0.0)
+                                D1=0.0
+                            #    print("d1", D1)
                             
                             try:
-                                print("c/n0_l1",float(satData[121:130]))
+                                C_N0_L1=float(satData[121:130])
+                             #   print("c/n0_l1",C_N0_L1)
                             except:
-                                print("c/n0_l1",0.0)
-                            print("\n")
+                                C_N0_L1=0.0
+                              #  print("c/n0_l1",C_N0_L1)
+                            #print("\n")
                         except:
-                            print("C1C",0.0)
-                            print("E1", 0.0)
-                            print("D1", 0.0)
-                            print("c/n0_E1",0.0)
-                            print("\n")
+                            C1=0.0        
+                        #    print("C1C",C1)
+                            L1=0.0
+                        #    print("E1", L1)
+                            D1=0.0
+                        #    print("D1", D1)
+                            C_N0_L1=0.0
+                         #   print("c/n0_E1",C_N0_L1)
+                         #   print("\n")
 
                         
                       
@@ -80,87 +94,118 @@ def readObs(dir, file):
                         try:
                             
                             try:
-                                print("C5Q", satData[132:146])
+                                C5=float(satData[132:146])
+                          #      print("C5Q", C5)
                             except:
-                                print("C5Q", 0.0)
+                                C5=0.0
+                           #     print("C5Q",C5)
 
                             try:
-                                print("E5a", float(satData[148:164]))
+                                L5= float(satData[148:164])
+                            #    print("E5a", L5)
                             except:
-                                print("E5a", 0.0)
+                                L5=0.0
+                             #   print("E5a", L5)
                             
                             try:
-                                print("D5", float(satData[165:180]))
+                                D5=float(satData[165:180])
+                              #  print("D5", D5)
                             except:
-                                print("D5", 0.0)
+                                D5=0.0
+                               # print("D5", D5)
                             
                             try:
-                                print("c/n0_E5",float(satData[186:194])) 
+                                C_N0_L5=float(satData[186:194])
+                                #print("c/n0_E5",C_N0_L5) 
                             except:
-                                print("c/n0_E5",0.0)
-                            print("\n")      
+                                C_N0_L5=0.0
+                                #print("c/n0_E5",C_N0_L5)
+                            #print("\n")      
                         except:
-                            print("C5Q",0.0)
-                            print("E5a", 0.0)
-                            print("D5", 0.0)
-                            print("c/n0_E5",0.0)
-                            print("\n")
-
-                        
+                            C5=0.0
+                            #print("C5Q",0.0)
+                            L5=0.0
+                            #print("E5a", 0.0)
+                            D5=0.0
+                            #print("D5", 0.0)
+                            C_N0_L5=0.0
+                            #print("c/n0_E5",0.0)
+                        #    print("\n")
+                   
                         
                     
-                        
+                    #satelliti GPS GLONASS e BeiDou               
                     else:
                         
                         try:
-                            print("c1", float(satData[5:17]))
+                            C1=float(satData[5:17])
+                  #          print("c1", C1)
                         except:
-                            print("c1", 0.0)
+                            C1=0.0
+                  #          print("c1", C1)
                         
                         try:
-                            print("L1", float(satData[19:36]))
+                            L1=float(satData[19:36])
+                   #         print("L1", L1)
                         except:
-                            print("L1", 0.0)
+                            L1=0.0
+                    #        print("L1", L1)
 
                         try:
-                            print("d1", float(satData[38:51]))
+                            D1=float(satData[38:51])
+                     #       print("d1", D1)
                         except:
-                            print("d1", 0.0)
+                            D1=0.0
+                      #      print("d1", D1)
                         
                         try:
-                            print("c/n0_l1",float(satData[58:66]))
+                            C_N0_L1=float(satData[58:66])
+                       #     print("c/n0_l1",C_N0_L1)
                         except:
-                            print("c/n0_l1",0.0)
-                        print("\n")
+                            C_N0_L1=0.0
+                        #    print("c/n0_l1", C_N0_L1)
+                        #print("\n")
                     
                         try:
                             
                             try:
-                                print("c5", float(satData[68:82]))
+                                C5=float(satData[68:82])
+                         #       print("c5", C5)
                             except:
-                                print("c5", 0.0)
+                                C5=0.0
+                          #      print("c5", C5)
                             
                             try:
-                                print("l5", float(satData[83:98]))
+                                L5=float(satData[83:98])
+                           #     print("l5", L5)
                             except:
-                                print("l5", 0.0)
+                                L5=0.0
+                            #    print("l5", 0.0)
                             
                             try:
-                                print("d5", float(satData[102:117]))
+                                D5=float(satData[102:117])
+                             #   print("d5", float(satData[102:117]))
                             except:
-                                print("d5", 0.0)
+                                D5=0.0
+                              #  print("d5", D5)
                             
                             try:
-                                print("c/n0_l5", float(satData[121:130]))
+                                C_N0_L5=float(satData[121:130])
+                               # print("c/n0_l5", C_N0_L5)
                             except:
-                                print("c/n0_l5", 0.0)
-                            print("\n")
+                                C_N0_L5=0.0
+                                #print("c/n0_l5", C_N0_L5)
+                            #print("\n")
                         except:
-                            print("c5",0.0)
-                            print("l5", 0.0)
-                            print("d5", 0.0)
-                            print("c/n0_l5",0.0)
-                            print("\n")
+                            C5=0.0
+                            #print("c5",C5)
+                            L5=0.0
+                            #print("l5", L5)
+                            D5=0.0
+                            #print("d5", D5)
+                            C_N0_L5=0.0
+                            #print("c/n0_l5",C_N0_L5)
+                            #print("\n")
 
 
 
@@ -175,7 +220,8 @@ def readObs(dir, file):
                     
                     #print(satdId)
                     #Make a dummy dataframe
-                    dff = pd.DataFrame([[index,satdId,satData]], columns=['%_GPST','satID','satData'])
+                    dff = pd.DataFrame([[index,satdId,C1,L1,D1,C_N0_L1,C5,L5,D5,C_N0_L5]], columns=['%_GPST','satID','C1','L1','D(L1)','C/N0(L1)','C5','L5','D(L5)','C/N0(L5)'])
+                    print(dff)
                     #Tack it on the end
                     df = df.append(dff)
                    # print(df)
