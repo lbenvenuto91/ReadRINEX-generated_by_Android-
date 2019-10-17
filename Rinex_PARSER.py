@@ -9,6 +9,8 @@ import time
 directory ="./Android_RINEX_data/"
 rinex ="test_rinex_ridotto.19o" 
 
+lambda_l1= 0.1905 #lunghezza d'onda portante L1 [m]
+lambda_l5= 0.2548  #lunghezza d'onda portante L5 [m]
 
 
 def readObs(dir, file):
@@ -207,9 +209,17 @@ def readObs(dir, file):
                             #print("c/n0_l5",C_N0_L5)
                             #print("\n")
 
+                    #code-phase
 
-
+                    if C1 != 0.0 and L1!= 0.0:
+                        cd_phs_l1=C1-L1*lambda_l1
+                    else:
+                        cd_phs_l1=0.0
                     
+                    if C5 != 0.0 and L5!= 0.0:
+                        cd_phs_l5=C5-L5*lambda_l5
+                    else:
+                        cd_phs_l5=0.0
                     
                     
                     
@@ -220,7 +230,7 @@ def readObs(dir, file):
                     
                     #print(satdId)
                     #Make a dummy dataframe
-                    dff = pd.DataFrame([[index,satdId,C1,L1,D1,C_N0_L1,C5,L5,D5,C_N0_L5]], columns=['%_GPST','satID','C1','L1','D(L1)','C/N0(L1)','C5','L5','D(L5)','C/N0(L5)'])
+                    dff = pd.DataFrame([[index,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5]], columns=['%_GPST','satID','C1','L1','D(L1)','C/N0(L1)','Code-Phase(L1)','C5','L5','D(L5)','C/N0(L5)','Code-Phase(L5)'])
                     print(dff)
                     #Tack it on the end
                     df = df.append(dff)
