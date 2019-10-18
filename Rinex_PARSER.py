@@ -11,15 +11,6 @@ import sqlite3
 import mmap
 
 
-directory ="./Android_RINEX_data/"
-rinex ="test_rinex_ridotto.19o" 
-
-lambda_l1= 0.1905 #lunghezza d'onda portante L1 [m]
-lambda_l5= 0.2548  #lunghezza d'onda portante L5 [m]
-
-
-
-
 def get_num_lines(dir, file):
     lines = 0
     with open(dir + file) as handler:
@@ -32,11 +23,7 @@ def get_num_lines(dir, file):
     return lines
 
 
-
-
-
-
-def readObs(dir, file):
+def readObs(dir, file, table_name):
     
     '''
     Function to read obs from a RINEX file (generated with GEO++ RINEX Logger app)
@@ -44,11 +31,13 @@ def readObs(dir, file):
     the list contains also the field code_minus_phase: this parameter is calculated within this function.
 
     '''
+    lambda_l1= 0.1905 #lunghezza d'onda portante L1 [m]
+    lambda_l5= 0.2548  #lunghezza d'onda portante L5 [m]
     #df = pd.DataFrame()
     #Grab header
     query=[]
     header = ''
-    total_iter=get_num_lines(directory,rinex)
+    total_iter=get_num_lines(dir,file)
     with open(dir + file) as handler:
         for i,line in enumerate(handler):
             header += line
@@ -267,7 +256,7 @@ def readObs(dir, file):
                     #print(satdId)
                     #Make a dummy dataframe
 
-                    c="INSERT INTO osservazioni VALUES ({},'{}','{}',{},{},{},{},{},{},{},{},{},{})".format(epoch,index,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5)
+                    c="INSERT INTO {} VALUES ({},'{}','{}',{},{},{},{},{},{},{},{},{},{})".format(table_name, epoch,index,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5)
                     query.append(c)
                     #dff = pd.DataFrame([[index,epoch,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5]], columns=['%_GPST','epoch','satID','C1','L1','D(L1)','C/N0(L1)','Code-Phase(L1)','C5','L5','D(L5)','C/N0(L5)','Code-Phase(L5)'])
                     #print(dff)
@@ -282,7 +271,7 @@ def readObs(dir, file):
 
 
 
-def writeDataToDB(db_name, table_name):
+def writeDataToDB(db_name, table_name,query):
 
     conn=sqlite3.connect(db_name)
     c=conn.cursor()
@@ -295,16 +284,23 @@ def writeDataToDB(db_name, table_name):
         #print(i)
         c.execute(i)
 
-
     c.close()
     conn.commit()
     conn.close()
 
 
 
-header, query = readObs (directory, rinex)    
-print(type(header))
+def main():
 
-database='/home/lorenzo/RINEX_OBS.db'
-tabella='osservazioni'
-#writeDataToDB(database, tabella)
+    directory ="/home/lorenzo/remote/progetti_convegni/ricerca/2018_2022_PhD_Lorenzo/lavoro_ION-PLANS/" #add your own path or if you want to test the script use ./Android_RINEX_data/
+    rinex ="GEOP213I.19o" #put your own rinex file, or if you want to test the script put test_rinex_ridotto.19o
+    database='/home/lorenzo/RINEX_OBS.db' #ATTENTION: DO NOT PUT THE DB IN A SAMBA FOLDER: otherwise it not gonna work
+    tabella='GEOP213I'
+    header, query = readObs (directory, rinex,tabella)    
+    print(type(header))
+
+    
+    writeDataToDB(database, tabella, query)
+
+if __name__=="__main__":
+    main()
