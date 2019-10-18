@@ -5,6 +5,11 @@
 import pandas as pd
 from datetime import datetime, date, timedelta
 import time
+from progressbar import ProgressBar
+from tqdm import tqdm
+import sqlite3
+import mmap
+
 
 directory ="./Android_RINEX_data/"
 rinex ="test_rinex_ridotto.19o" 
@@ -13,34 +18,64 @@ lambda_l1= 0.1905 #lunghezza d'onda portante L1 [m]
 lambda_l5= 0.2548  #lunghezza d'onda portante L5 [m]
 
 
-def readObs(dir, file):
-    df = pd.DataFrame()
-    #Grab header
-    header = ''
+
+
+def get_num_lines(dir, file):
+    lines = 0
     with open(dir + file) as handler:
-        for i, line in enumerate(handler):
+    
+        for i, line in  enumerate(handler):
+                #Check for a Timestamp lable
+                if '> ' in line:
+                    lines+=1
+   
+    return lines
+
+
+
+
+
+
+def readObs(dir, file):
+    
+    '''
+    Function to read obs from a RINEX file (generated with GEO++ RINEX Logger app)
+    returns a list of query which must be used to upload the data to a sqlite DB
+    the list contains also the field code_minus_phase: this parameter is calculated within this function.
+
+    '''
+    #df = pd.DataFrame()
+    #Grab header
+    query=[]
+    header = ''
+    total_iter=get_num_lines(directory,rinex)
+    with open(dir + file) as handler:
+        for i,line in enumerate(handler):
             header += line
+            total_iter+=1 #serve per barra di stato
             if 'END OF HEADER' in line:
                 break
-    #Grab Data
     
+    #Grab Data
+    print(total_iter)
+    epoch=0
     #print('ciao sono qui')
     with open(dir + file) as handler:
-        for i, line in enumerate(handler):
+        
+        for i, line in  enumerate(tqdm(handler, total=total_iter)):
             #Check for a Timestamp lable
             if '> ' in line:
+                epoch +=1 
                 #Grab Timestamp
                 links = line.split()
                 #print(links)
                 index = datetime.strptime(' '.join(links[1:7]), '%Y %m %d %H %M %S.%f0')
-                print(index)
-                b = index + timedelta(0,3) #add 3 seconds
-                c = index - timedelta(0,3) #remove 3 seconds
-                print(b,c)
+           
                 #Identify number of satellites
                 satNum = int(links[8])
                 #print(satNum)
                 #For every sat
+                
                 for j in range(satNum):
                     #just save the data as a string for now
                     satData = handler.readline()
@@ -92,8 +127,7 @@ def readObs(dir, file):
                          #   print("c/n0_E1",C_N0_L1)
                          #   print("\n")
 
-                        
-                      
+                                      
                         
                         try:
                             
@@ -232,15 +266,45 @@ def readObs(dir, file):
                     
                     #print(satdId)
                     #Make a dummy dataframe
-                    dff = pd.DataFrame([[index,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5]], columns=['%_GPST','satID','C1','L1','D(L1)','C/N0(L1)','Code-Phase(L1)','C5','L5','D(L5)','C/N0(L5)','Code-Phase(L5)'])
-                    print(dff)
+
+                    c="INSERT INTO osservazioni VALUES ({},'{}','{}',{},{},{},{},{},{},{},{},{},{})".format(epoch,index,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5)
+                    query.append(c)
+                    #dff = pd.DataFrame([[index,epoch,satdId,C1,L1,D1,C_N0_L1,cd_phs_l1,C5,L5,D5,C_N0_L5,cd_phs_l5]], columns=['%_GPST','epoch','satID','C1','L1','D(L1)','C/N0(L1)','Code-Phase(L1)','C5','L5','D(L5)','C/N0(L5)','Code-Phase(L5)'])
+                    #print(dff)
                     #Tack it on the end
-                    df = df.append(dff)
+                    #df = df.append(dff)
                    # print(df)
-                    
-    return df, header
+            else:
+                continue
+
+    return header, query
 
 
 
-df, header = readObs (directory, rinex)    
-df.set_index(['%_GPST', 'satID'])
+
+def writeDataToDB(db_name, table_name):
+
+    conn=sqlite3.connect(db_name)
+    c=conn.cursor()
+
+    dropTableStatement = "DROP TABLE IF EXISTS {}".format(table_name)
+
+    c.execute(dropTableStatement)
+    c.execute("CREATE TABLE {}(epoca INTEGER , gpst DATE, sat_id TEXT, pseudorange_l1 REAL, carrierphase_l1 REAL, doppler_l1 REAL, SNR_l1 REAL, carrier_minus_phase_l1 REAL, pseudorange_l5 REAL, carrierphase_l5 REAL, doppler_l5 REAL, SNR_l5 REAL, carrier_minus_phase_l5 REAL,  PRIMARY KEY (gpst, sat_id))".format(table_name))
+    for i in query:
+        #print(i)
+        c.execute(i)
+
+
+    c.close()
+    conn.commit()
+    conn.close()
+
+
+
+header, query = readObs (directory, rinex)    
+print(type(header))
+
+database='/home/lorenzo/RINEX_OBS.db'
+tabella='osservazioni'
+#writeDataToDB(database, tabella)
